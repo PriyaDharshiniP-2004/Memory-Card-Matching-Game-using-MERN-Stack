@@ -1,0 +1,37 @@
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1520px;
+    height:1000px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .home-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }

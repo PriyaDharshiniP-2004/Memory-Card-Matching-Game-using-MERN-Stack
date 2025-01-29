@@ -1,0 +1,137 @@
+.multiplayer {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header Styling */
+  .multiplayer h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Headings */
+  .multiplayer h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  /* Reset Button */
+  .reset-btn {
+    margin-top: 20px;
+    background-color: #dc3545;
+  }
+  
+  .reset-btn:hover {
+    background-color: #a71d2a;
+  }
+  
+  /* Theme and Level Selector */
+  .theme-selector,
+  .level-selector,
+  .online-play,
+  .game-start {
+    margin-bottom: 20px;
+  }
+  
+  /* Input Styling */
+  input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  /* Waiting Message */
+  .online-play p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Game Board */
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .game-board button {
+    font-size: 1.2rem;
+    background-color: #17a2b8;
+  }
+  
+  .game-board button:hover {
+    background-color: #117a8b;
+  }
+  
+  /* Turn Message */
+  .game-start p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+  }
+  
+  /* Dynamic Turn Styling */
+  .game-start p.your-turn {
+    color: #28a745; /* Green for active turn */
+  }
+  
+  .game-start p.opponent-turn {
+    color: #ffc107; /* Yellow for opponent's turn */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .multiplayer {
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    input[type="text"] {
+      font-size: 0.9rem;
+    }
+  
+    .game-board button {
+      font-size: 1rem;
+    }
+  }

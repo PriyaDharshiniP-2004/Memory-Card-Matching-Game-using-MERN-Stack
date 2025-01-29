@@ -1,10 +1,3 @@
-/* .card {
-    width: 100px;
-    height: 120px;
-    perspective: 1000px;
-    cursor: pointer;
-  } */
-
   .card{
     width: calc(80vw / 6);
     height: calc(80vw / 6);
@@ -54,6 +47,7 @@
   
   .card .front {
     background: #f0f0f0;
+    color:grey;
   }
   
   .card .back {

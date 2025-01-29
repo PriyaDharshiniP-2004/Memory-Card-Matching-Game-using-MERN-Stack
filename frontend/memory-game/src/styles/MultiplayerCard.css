@@ -1,0 +1,53 @@
+.card {
+    width: 100px;
+    height: 150px;
+    background-color: #007bff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    perspective: 1000px; /* Enables 3D effect */
+    position: relative;
+    transition: transform 0.3s, background-color 0.3s;
+    margin: 10px; /* Space between cards */
+  }
+  
+  /* Hover Effect */
+  .card:hover {
+    background-color: #0056b3; /* Darken background on hover */
+  }
+  
+  /* Flipped Card Styling */
+  .card.flipped {
+    background-color: #28a745; /* Green for flipped card */
+    transform: rotateY(180deg); /* Flip effect */
+  }
+  
+  /* Card Front Content */
+  .card-content {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Card Back Content */
+  .card-back {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .card {
+      width: 80px;
+      height: 120px;
+    }
+  
+    .card-content,
+    .card-back {
+      font-size: 1.2rem;
+    }
+  }

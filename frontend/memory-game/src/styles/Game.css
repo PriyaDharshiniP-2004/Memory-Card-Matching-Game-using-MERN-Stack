@@ -1,0 +1,52 @@
+*{
+  font-family: poppins;
+  
+}
+.Game {
+      text-align: center;
+      color: white;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .timer {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    gap: 10px;
+    justify-items: center;
+    /* padding: 20px; */
+  }
+  .theme-selector,
+  .level-selector {
+    margin: 20px;
+    
+  }
+  body{
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+  } 
+  button:hover{
+    transform: scale(1.1);
+    transition: ease-in 0.2s;
+  }
